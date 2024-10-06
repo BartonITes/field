@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SKILL ASSESMENT FOR FIELD RESCUE</h1>
+        <form id="emergencyForm">
+            <label for="emergencyType">Type of SKill</label>
+            <select id="emergencyType" required>
+                <option value="">Select a skill type</option>
+                <option value="swimming">swimming</option>
+                <option value="trekking">trekking</option>
+                <option value="first aid trauma care">first aid and trauma care</option>
+                <option value="fire fighting">fire fighting</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Location of Stay" required>
+
+            <label for="description">Name Contact Details including mail-id</label>
+            <textarea id="description" placeholder="enter name  contact number and mail id" required></textarea>
+
+            <button type="submit">SUBMIT RESPONSE</button>
+        </form>
+        
+        <h2>Reported Emergency</h2>
+        <ul id="emergencyList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
